@@ -49,15 +49,15 @@
                         <a class="nav-link" href="<%= request.mainURL %>">Home <span class="sr-only">(current)</span></a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="<%= request.mainURL %>/MyUploads">My Uploads</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="<%= request.mainURL %>/MySharedLinks">My shared links</a>
-                    </li>
-
+                    
                     <% if (request.isLogin) { %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<%= request.mainURL %>/MyUploads">My Uploads</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="<%= request.mainURL %>/MySharedLinks">My shared links</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <%= request.session.user.name %>
